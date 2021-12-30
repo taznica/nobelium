@@ -131,6 +131,10 @@ nav {
     opacity: 1;
     @apply dark:text-gray-300 text-gray-600;
   }
+  /* Margin between posts (original: 2rem) */
+  .md\:mb-8 {
+    margin-bottom: 3rem !important;
+  }
 }
 
 @supports not (backdrop-filter: none) {
