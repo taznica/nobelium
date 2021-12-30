@@ -143,3 +143,10 @@ nav {
     @apply bg-day bg-opacity-90 dark:bg-night dark:bg-opacity-90;
   }
 }
+
+.blog-title {
+  display: inline-block;
+  margin-bottom: 7rem;
+  padding: 0.2rem 0.8rem;
+  border-radius: 0.3rem;
+}

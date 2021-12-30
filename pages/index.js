@@ -3,6 +3,7 @@ import BlogPost from '@/components/BlogPost'
 import Pagination from '@/components/Pagination'
 import { getAllPosts } from '@/lib/notion'
 import BLOG from '@/blog.config'
+import Link from 'next/link'
 
 export async function getStaticProps () {
   const posts = await getAllPosts({ includePages: false })
@@ -22,6 +23,13 @@ export async function getStaticProps () {
 const blog = ({ postsToShow, page, showNext }) => {
   return (
     <Container title={BLOG.title} description={BLOG.description}>
+      <Link href="/">
+        <a>
+          <h1 className="blog-title font-bold text-3xl text-white bg-black border-black dark:text-black dark:bg-white dark:border-white">
+            {BLOG.title}
+          </h1>
+        </a>
+      </Link>
       {postsToShow.map(post => (
         <BlogPost key={post.id} post={post} />
       ))}
