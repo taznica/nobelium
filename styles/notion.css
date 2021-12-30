@@ -25,9 +25,7 @@ svg + .notion-page-title-text {
 }
 
 .notion-bookmark {
-  @apply border;
-  @apply border-gray-100;
-  color: inherit;
+  border-color: rgba(184, 156, 94, 0.5);  /*#b89c5e*/
 }
 
 .notion-bookmark .notion-bookmark-title,
@@ -48,7 +46,7 @@ pre[class*='language-'] {
 }
 
 .notion-bookmark:hover {
-  @apply border-blue-400;
+  border-color: rgba(184, 156, 94, 1);
 }
 .notion-viewport {
   z-index: -10;
@@ -84,4 +82,11 @@ pre[class*='language-'] {
 }
 .notion-collection-row {
   @apply hidden;
+}
+a.notion-link {
+  color: rgba(184, 156, 94, 1);
+  border-color: rgba(184, 156, 94, 1);
+}
+a.notion-link:hover {
+  border-color: rgba(184, 156, 94, 1);
 }
